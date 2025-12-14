@@ -25,7 +25,7 @@ const EnergyMixCard = ({ dayData }: { dayData: energyMixDay }) => {
 
 
     return (
-        <div className="bg-energyCard rounded-xl shadow-lg w-80 text-white border-2 border-buttonBg/10 flex flex-col p-4">
+        <div className="bg-energyCard rounded-xl shadow-lg w-80 lg:w-full text-white border-2 border-buttonBg/10 flex flex-col p-4">
             <h3 className="text-2xl font-bold text-center -mb-4">
                 {new Date(dayData.date).toLocaleDateString()}
             </h3>

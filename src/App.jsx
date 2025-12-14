@@ -9,13 +9,13 @@ function App() {
     const {data, isLoading, isError} = useFetchEnergyMix();
 
     if (isLoading) return <LoadingSpinner />;
-    if (isError) return <h1>Error</h1>;
+    if (isError) return <h1 className={"text-center text-5xl text-white"}>Error :(</h1>;
 
     return (
         <>
             <Header/>
 
-            <div className="max-w-5xl mx-auto">
+            <div className="max-w-6xl mx-auto px-4 w-full">
                 <div className="flex flex-col gap-1 mt-8">
                     <h2 className={"text-4xl text-white text-center font-bold"}>Energy mix forecast</h2>
                     <h3 className={"text-gray-400 text-center tracking-widest"}>Reduce your carbon footprint.</h3>

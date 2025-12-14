@@ -9,7 +9,7 @@ const OptimalChargingWindow = () => {
 
     return (
         <div className="bg-energyCard rounded-xl my-8 shadow-lg border-2 border-buttonBg/10 mx-4 lg:mx-0">
-            <div className="py-6 px-4 flex flex-col lg:flex-row justify-between items-center lg:items-start gap-8 lg:gap-4 lg:mx-4">
+            <div className="py-6 px-4 flex flex-col lg:flex-row justify-between items-center lg:items-start gap-8">
 
                 <div className="w-full lg:w-1/2">
                     <h3 className="text-white text-xl font-bold mb-4 text-center lg:text-left">
@@ -17,7 +17,7 @@ const OptimalChargingWindow = () => {
                     </h3>
 
                     <div>
-                        <div className="w-full px-2">
+                        <div className="w-full">
                             <HoursSlider hours={hours} setHours={setHours} />
                         </div>
 
