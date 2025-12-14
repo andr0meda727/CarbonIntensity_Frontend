@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Slider from '@mui/material/Slider';
 
 interface Props {
@@ -42,7 +41,7 @@ const HoursSlider = ({ hours, setHours }: Props) => {
                 }}
             />
 
-            <div className="text-white text-md ">
+            <div className="text-white text-m">
                 Selected charging time:{' '}
                 <span className="font-semibold text-white">{hours}h</span>
             </div>
