@@ -7,3 +7,9 @@ export interface energyMixDay {
 export interface EnergyMixResponse {
     energyMixDays: energyMixDay[];
 }
+
+export interface OptimalWindowResponse {
+    startTime: string;
+    endTime: string;
+    cleanEnergyPercentage: number;
+}

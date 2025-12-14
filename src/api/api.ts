@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { EnergyMixResponse } from '../types/types';
+import {EnergyMixResponse, OptimalWindowResponse} from '../types/types';
 
 export const api = axios.create({
     baseURL: 'https://localhost:44302/api/CarbonIntensity',
@@ -10,4 +10,5 @@ export const api = axios.create({
 
 export const energyMixApi = {
     getDailyMix: () => api.get<EnergyMixResponse>('/energy-mix'),
+    getOptimalWindow: (hours: number) => api.get<OptimalWindowResponse>(`/optimal-window?hours=${hours}`),
 };
