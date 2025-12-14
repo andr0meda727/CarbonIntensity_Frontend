@@ -22,7 +22,7 @@ function App() {
                 </div>
 
                 <div className="flex flex-col lg:flex-row justify-center items-center gap-8 mt-16">
-                    {data?.energyMixDays.map((day) => (
+                    {data?.energyMixDays?.map((day) => (
                         <EnergyMixCard key={day.date} dayData={day} />
                     ))}
                 </div>
