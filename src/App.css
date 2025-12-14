@@ -1,5 +1,5 @@
 :root {
-  --primary-bg-color: #1C3228;
+  --primary-bg-color: #10221A;
   --primary-card-color: #1C2E26;
   --primary-text-color: #FFFFFF;
   --secondary-text-color: #9CA3AF;
@@ -7,4 +7,5 @@
 
 body {
   background: var(--primary-bg-color);
+  font-family: Inter, sans-serif;
 }
