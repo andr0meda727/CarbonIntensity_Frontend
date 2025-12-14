@@ -12,10 +12,10 @@ const HoursSlider = ({ hours, setHours }: Props) => {
     ];
 
     return (
-        <div className="w-sm mr-4">
-            <div className="flex mb-2">
-                <span className={"text-neutral-400 textsm"}>Duration</span>
-                <span className={"font-semibold ml-2 text-buttonBg"}>{hours}h</span>
+        <div className="w-full">
+            <div className="flex justify-between items-center mb-2 px-1">
+                <span className={"text-neutral-400 text-sm"}>Duration</span>
+                <span className={"font-semibold text-buttonBg"}>{hours}h</span>
             </div>
 
             <Slider

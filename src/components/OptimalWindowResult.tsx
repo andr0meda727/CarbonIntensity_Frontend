@@ -4,7 +4,8 @@ const OptimalWindowResult = ({ startTime, endTime, cleanEnergyPercentage }: Opti
     const duration = (new Date(endTime).getTime() - new Date(startTime).getTime()) / (1000 * 60 * 60);
 
     return (
-        <div className="mr-8 fade-in-up">
+        <div className="fade-in-up w-full lg:w-auto lg:mr-8">
+
             <div className="flex justify-between items-center mb-6">
                 <h3 className="text-white text-xl flex items-center">
                     <ClockIcon />
@@ -15,31 +16,35 @@ const OptimalWindowResult = ({ startTime, endTime, cleanEnergyPercentage }: Opti
                 </span>
             </div>
 
-
             <div className="text-neutral-500 text-sm font-bold uppercase mb-4 tracking-wider">
                 RECOMMENDATION
             </div>
 
-            <div className="flex items-center">
+            <div className="flex items-center justify-between sm:justify-start">
+
+                {/* START BLOCK */}
                 <div className="flex flex-col">
                     <span className="text-neutral-400 uppercase text-xs mb-1">Start</span>
-                    <div className="flex gap-2 items-baseline">
-                        <span className="text-buttonBg font-bold">{formatDate(startTime)}</span>
+                    <div className="flex flex-col sm:flex-row sm:gap-2 sm:items-baseline">
+                        <span className="text-buttonBg font-bold text-sm">{formatDate(startTime)}</span>
                         <span className="text-2xl font-bold text-white">{formatTime(startTime)}</span>
                     </div>
                 </div>
 
-                <ArrowRightIcon />
+                <div className="mx-2 sm:mx-4">
+                    <ArrowRightIcon />
+                </div>
 
-                <div className="flex flex-col">
-                    <span className="text-neutral-400 uppercase text-xs mb-1">END</span>
-                    <div className="flex gap-2 items-baseline">
-                        <span className="text-buttonBg font-bold">{formatDate(endTime)}</span>
+                <div className="flex flex-col text-right sm:text-left">
+                    <span className="text-neutral-400 uppercase text-xs mb-1">End</span>
+                    <div className="flex flex-col sm:flex-row sm:gap-2 sm:items-baseline">
+                        <span className="text-buttonBg font-bold text-sm">{formatDate(endTime)}</span>
                         <span className="text-2xl font-bold text-white">{formatTime(endTime)}</span>
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col gap-0.5 justify-center mt-4">
+
+            <div className="flex flex-col gap-0.5 justify-center mt-4 pt-4 border-t border-white/5">
                 <p className={"text-white font-bold text-xl"}>Clean energy:</p>
                 <p className={"text-green-600 font-bold text-lg"}>{cleanEnergyPercentage}%</p>
             </div>
