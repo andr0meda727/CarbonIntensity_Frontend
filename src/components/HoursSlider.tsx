@@ -40,11 +40,6 @@ const HoursSlider = ({ hours, setHours }: Props) => {
                     }
                 }}
             />
-
-            <div className="text-white text-m">
-                Selected charging time:{' '}
-                <span className="font-semibold text-white">{hours}h</span>
-            </div>
         </div>
     );
 };

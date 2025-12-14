@@ -11,7 +11,7 @@ const OptimalChargingWindow = () => {
 
     return (
         <div className="bg-energyCard rounded-xl my-8 shadow-lg border-2 border-buttonBg/10">
-            <div className="py-6 px-4 flex justify-between items-center mr-4">
+            <div className="py-6 px-4 flex justify-between items-center mx-4">
                 <div>
                 <h3 className="text-white text-xl font-bold mb-2">Enter charging time</h3>
                     <div>
