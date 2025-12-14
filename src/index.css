@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+@theme {
+    --color-primaryBg: #10221A;
+    --color-energyCard: #1C2E26;
+    --color-buttonBg: #13EC92;
+    --color-textMain: #FFFFFF;
+    --color-textSecondary: #9CA3AF;
+}
